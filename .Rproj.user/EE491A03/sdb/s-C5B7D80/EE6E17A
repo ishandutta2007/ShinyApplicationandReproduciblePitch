@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the server logic for a Shiny web application.\n# You can find out more about building applications with Shiny here:\n# \n# http://www.rstudio.com/shiny/\n#\n\nlibrary(shiny)\n\nshinyServer(\n  function(input,output)\n  {\n    output$oid1<-renderText({as.numeric((input$length))*as.numeric((input$breadth))*as.numeric((input$height)) })\n    output$oid2<-renderText({as.numeric(input$length)*as.numeric(input$breadth)+\n                               as.numeric(input$height)*as.numeric(input$breadth)+\n                               as.numeric(input$length)*as.numeric(input$height)})\n    output$odate<-renderPrint({input$date})    \n  })\n",
+    "created" : 1422182582169.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1892034511",
+    "id" : "EE6E17A",
+    "lastKnownWriteTime" : 1422182722,
+    "path" : "~/Documents/R Projects/ShinyApplicationandReproduciblePitch/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

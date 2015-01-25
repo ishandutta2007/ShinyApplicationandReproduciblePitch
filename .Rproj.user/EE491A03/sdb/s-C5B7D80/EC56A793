@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n# \n# http://www.rstudio.com/shiny/\n#\n\nlibrary(shiny)\n\nshinyUI(pageWithSidebar(\n  \n  # Application title\n  headerPanel(\"To Calculate Volume and Surface Area of Cuboid\"),\n  \n  # Sidebar with a slider input for number of bins\n  sidebarPanel(\n    textInput(inputId='length','Enter Length', value='0'),\n    textInput(inputId='breadth','Enter Breadth', value='0'),\n    textInput(inputId='height','Enter Height', value='0'),\n    dateInput(\"date\",\"Date:\")\n  ),\n  \n  # Show a plot of the generated distribution\n  mainPanel(h2('Calculating Volume and Surface Area'),\n            h4('Volume is'),\n            verbatimTextOutput(\"oid1\"),\n            h4('Surface Area'),\n            verbatimTextOutput(\"oid2\"),\n            h4('Today Date is'),\n            verbatimTextOutput(\"odate\")\n  )\n))\n",
+    "created" : 1422182582010.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1402457511",
+    "id" : "EC56A793",
+    "lastKnownWriteTime" : 1422182741,
+    "path" : "~/Documents/R Projects/ShinyApplicationandReproduciblePitch/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
